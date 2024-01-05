@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+}
+/* td{
+    background-color: white;
+} */
+body{
+    /* background-color: red; */
+    background: conic-gradient(#ff0a 20%,#00fa ,#f00a 55%  ,#0f0a );
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vmin;
+
+}
+h1{
+    /* filter: blur(2px); */
+    margin-block:0px 10px;
+    font-size: 4.5vmin;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+img{
+    width:80%
+}
+td{
+    text-align: center;
+    width: 5vmin;
+    height: 5vmin;
+    /* background-color: white; */
+    /* aspect-ratio: 1/1; */
+    /* border-radius: 50px; */
+}
+table,table td{
+    border: 2px solid #333 ;
+    /* border-radius: 50px; */
+}
+table{
+    height: 94.5vmin;
+    aspect-ratio: 1;
+    border-collapse: collapse;
+    box-shadow: 0 0 50px 5px gray;
+    background-color: white;
+}
+td >div{
+    margin: auto;
+    width: 70%;
+    aspect-ratio: 1;
+    border: 2px solid #222;
+    box-shadow: 0 0 7vmin 3px #fffa;
+    border-radius: 3%;
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    gap: 5px;
+
+}
+div>div{
+/* background-image: url("./images/white-star.png"); */
+/* background-position: center; */
+display: flex;
+position: relative;
+align-content: center;
+align-items: center;
+justify-content: center;
+    width: 35%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 1px lightgray;
+    border: 2px solid #444 ;
+}
+#green >div div{
+    background-color: green;
+}
+#yellow >div div{
+    background-color: yellow;
+}
+#red >div div{
+    background-color: red;
+}
+#blue >div div{
+    background-color: blue;
+}
+
+.end{
+    back;
+}
+#win-block{
+    position: relative;
+}
+
+#win-block::before{
+    content: "";
+    inset: 0;
+    position: absolute;
+    border: 9.5vmin solid ;
+    border-color: transparent;
+    border-top-color: yellow;
+    border-bottom-color: red;
+    border-right-color: blue;
+    border-left-color: green;
+    z-index: 0;
+}
+
+.star{
+    /* inset: 0; */
+    position: absolute;
+    font-size: 10vmin;
+    /* outline: 1px solid red; */
+    color: white;
+    text-shadow: 0px 0px 1px #000,0px 0px 2px #000,0px 0px 3px #000,0px 0px 5px #000;   
+    padding-bottom: 1.3vmin;
+    /* margin-bottom: 5vmin; */
+}
+/* td{
+    background-color: inherit;
+} */

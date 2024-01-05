@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  display: grid;
+  min-height: 100vh;;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+  /* grid-template-rows: repeat(auto-fit,minmax(300px,1fr)); */
+  grid-gap:10px;
+
+  border:5px solid goldenrod;
+  padding: 10px;
+}
+.items{
+  border:3px solid orangered;
+}
+.items:nth-of-type(3n){
+background-color: palevioletred;
+}
+.items:nth-of-type(5n):not(:nth-of-type(3n)){
+background-color: greenyellow;
+}
+.items:nth-of-type(n):not(:nth-of-type(3n),:nth-of-type(5n)){
+background-color: dodgerblue;
+}

@@ -1,0 +1,11 @@
+
+.mask1{
+    color: blanchedalmond;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.4rem;
+  padding: 10%;
+  text-shadow: 1px 1px purple,-1px -1px black;
+  background:lightcoral  url(images//img.jpg) no-repeat center /cover;
+  mask-image: linear-gradient(to bottom, red,#fff5);
+  background-blend-mode: ;
+}

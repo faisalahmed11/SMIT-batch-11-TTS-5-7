@@ -1,0 +1,48 @@
+body{
+    min-height: 100vh;
+    
+}
+#container{
+    /* display: block; */
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    margin-top: 20vh;
+    margin-inline: auto;
+    background-color: coral;
+    transiion: all .2s ease-in-out;
+}
+#container::before{
+    transition: all .12s ease-in-out;
+    content: "";
+    /* width: 100px; */
+    /* height: 100px; */
+    display: block;
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    background-color: red;
+    margin: auto;
+    z-index: 23;
+}
+#container::after{
+    transition: all .1s ease-in-out;
+    content: "";
+    opacity: 0;
+    /* width: 100px; */
+    /* height: 100px; */
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-color:blue ;
+    margin: auto;
+    z-index: 23;
+}
+#container:hover::before{
+    transform: skew(60deg, 30deg);
+opacity: 1;
+}
+#container:hover::after{
+    transform: skew(60deg, 30deg);
+opacity: 1;
+}

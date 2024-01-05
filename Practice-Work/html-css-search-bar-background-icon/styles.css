@@ -1,0 +1,20 @@
+
+p[class="top"]{
+    color: red;
+}
+
+input[type="search"]{
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 7px;
+    border: 1px solid dodgerblue;
+}
+input[type="search"]:placeholder-shown{
+    background-image: url(images//search-icon.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 98% 50%;
+
+}
